@@ -7,19 +7,19 @@ const Header = () => {
     return (
         <div className="header d-flex">
             <h3>
-                <Link to="/">
+                <Link to="//sw-db/">
                 Star DB
                 </Link>
             </h3>
             <ul className="d-flex">
                 <li>
-                    <Link to="/people/">People</Link>
+                    <Link to="/sw-db/people/">People</Link>
                 </li>
                 <li>
-                    <Link to="/planet/">Planets</Link>
+                    <Link to="/sw-db/planet/">Planets</Link>
                 </li>
                 <li>
-                    <Link to="/starship/">Starships</Link>
+                    <Link to="/sw-db/starship/">Starships</Link>
                 </li>
             </ul>
         </div>
