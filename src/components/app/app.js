@@ -5,12 +5,15 @@ import { PeoplePage, PlanetPage, StarshipPage } from '../pages';
 import ErrorBoundry from '../error-boundry';
 import { SwapiServiceProvider } from '../swapi-service-context';
 import SwapiService from '../../services/swapi-service';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { StarshipDetails } from '../sw-components';
 
 import './app.css';
 
 const App = () => {
+
     const swapiService = new SwapiService();
+
     return (
         <div className="container">
             <ErrorBoundry>
@@ -19,10 +22,18 @@ const App = () => {
                         <div className="stardb-app">
                             <Header />
                             <RandomPlanet />
-                            <Route path="/" render={ () => <h2>Welcome to Star Wars Data Base</h2> } exact />
-                            <Route path="/people" component={ PeoplePage } />
-                            <Route path="/planet" component={ PlanetPage } />
-                            <Route path="/starship" component={ StarshipPage } />
+                            <Switch>
+                                <Route path="/" render={ () => <h2>Welcome to Star Wars Data Base</h2> } exact />
+                                <Route path="/people/:id?" component={ PeoplePage } />
+                                <Route path="/planet" component={ PlanetPage } />
+                                <Route path="/starship" exact component={ StarshipPage } />
+                                <Route path="/starship/:id" 
+                                    render={ ({ match })=>{
+                                        const { id } = match.params;
+                                        return <StarshipDetails itemId={ id } />
+                                    } } />
+                                <Route render={ () => <h2>Page not found</h2> } />
+                            </Switch>
                         </div>
                     </Router>
                 </SwapiServiceProvider>              

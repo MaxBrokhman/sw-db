@@ -1,26 +1,17 @@
 import React from 'react';
 import TwoColumnRow from '../two-column-row';
 import { PersonDetails, PersonList } from '../sw-components';
+import { withRouter } from 'react-router-dom';
 
-export default class PeoplePage extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            selectedItem: null
-        };
-    };
+ const PeoplePage = ({ history, match }) => {
 
-    onListItemSelect(id){
-        this.setState({
-            selectedItem: id
-        });
-    };
+    const { id } = match.params;
 
-    render(){
-        return(
-            <TwoColumnRow 
-            left={ <PersonList onListItemSelect={ this.onListItemSelect.bind(this) }/> }
-            right={ <PersonDetails itemId={ this.state.selectedItem } /> }/>
-        );
-    };
+    return(
+        <TwoColumnRow 
+        left={ <PersonList onListItemSelect={ (id) => {history.push(id)} }/> }
+        right={ <PersonDetails itemId={ id } /> }/>
+    );
 };
+
+export default withRouter(PeoplePage);
