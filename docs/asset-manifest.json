@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MaxBrokhman/sw-db/static/css/main.96ad9414.chunk.css",
-    "main.js": "/MaxBrokhman/sw-db/static/js/main.62fec0e0.chunk.js",
-    "main.js.map": "/MaxBrokhman/sw-db/static/js/main.62fec0e0.chunk.js.map",
-    "runtime~main.js": "/MaxBrokhman/sw-db/static/js/runtime~main.fbbb4903.js",
-    "runtime~main.js.map": "/MaxBrokhman/sw-db/static/js/runtime~main.fbbb4903.js.map",
-    "static/js/2.2d662d09.chunk.js": "/MaxBrokhman/sw-db/static/js/2.2d662d09.chunk.js",
-    "static/js/2.2d662d09.chunk.js.map": "/MaxBrokhman/sw-db/static/js/2.2d662d09.chunk.js.map",
-    "index.html": "/MaxBrokhman/sw-db/index.html",
-    "precache-manifest.efe741bb38a7dcb380ca75eb48b69bcb.js": "/MaxBrokhman/sw-db/precache-manifest.efe741bb38a7dcb380ca75eb48b69bcb.js",
-    "service-worker.js": "/MaxBrokhman/sw-db/service-worker.js",
-    "static/css/main.96ad9414.chunk.css.map": "/MaxBrokhman/sw-db/static/css/main.96ad9414.chunk.css.map"
+    "main.css": "/sw-db/static/css/main.96ad9414.chunk.css",
+    "main.js": "/sw-db/static/js/main.62fec0e0.chunk.js",
+    "main.js.map": "/sw-db/static/js/main.62fec0e0.chunk.js.map",
+    "runtime~main.js": "/sw-db/static/js/runtime~main.3bec0f40.js",
+    "runtime~main.js.map": "/sw-db/static/js/runtime~main.3bec0f40.js.map",
+    "static/js/2.2d662d09.chunk.js": "/sw-db/static/js/2.2d662d09.chunk.js",
+    "static/js/2.2d662d09.chunk.js.map": "/sw-db/static/js/2.2d662d09.chunk.js.map",
+    "index.html": "/sw-db/index.html",
+    "precache-manifest.99f51a3f131b2b693b2048bb33f89a7f.js": "/sw-db/precache-manifest.99f51a3f131b2b693b2048bb33f89a7f.js",
+    "service-worker.js": "/sw-db/service-worker.js",
+    "static/css/main.96ad9414.chunk.css.map": "/sw-db/static/css/main.96ad9414.chunk.css.map"
   }
 }
