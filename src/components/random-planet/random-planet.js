@@ -18,7 +18,6 @@ export default class RandomPlanet extends React.Component{
     componentDidMount(){
         this.swapiService = new SwapiService();
         this.updatePlanet();
-        //this.timer = setInterval(this.updatePlanet.bind(this), this.props.updateInterval);
     }
 
     onPlanetLoaded(planet){

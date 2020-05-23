@@ -23,11 +23,11 @@ const App = () => {
                             <Header />
                             <RandomPlanet />
                             <Switch>
-                                <Route path="/" render={ () => <h2>Welcome to Star Wars Data Base</h2> } exact />
-                                <Route path="/people/:id?" component={ PeoplePage } />
-                                <Route path="/planet" component={ PlanetPage } />
-                                <Route path="/starship" exact component={ StarshipPage } />
-                                <Route path="/starship/:id" 
+                                <Route path="/sw-db/" render={ () => <h2>Welcome to Star Wars Data Base</h2> } exact />
+                                <Route path="/sw-db/people/:id?" component={ PeoplePage } />
+                                <Route path="/sw-db/planet" component={ PlanetPage } />
+                                <Route path="/sw-db/starship" exact component={ StarshipPage } />
+                                <Route path="/sw-db/starship/:id" 
                                     render={ ({ match })=>{
                                         const { id } = match.params;
                                         return <StarshipDetails itemId={ id } />
